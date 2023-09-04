@@ -1,0 +1,14 @@
+{
+  "compileOnSave": true,
+  "compilerOptions": {
+    "strict": true,
+    "jsx": "react",
+    "module": "es2022",
+    "target": "es2021",
+    "moduleResolution": "Node",
+    "esModuleInterop": true,
+    "types": ["chrome"]
+  },
+  "include": ["src/**/*.ts", "src/**/*.tsx", "types/*.d.ts"],
+  "exclude": ["node_modules", "webpack.config.js"],
+}

@@ -1,0 +1,25 @@
+{
+    "manifest_version": 3,
+    "name": "Test dynamic imports content script",
+    "version": "0.0.1",
+    "description": "Testing dynamic imports in content scripts",
+    "host_permissions": [
+        "http://localhost/*"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "http://localhost/*"
+            ],
+            "js": [
+                "localhost.js"
+            ]
+        }
+    ],
+    "web_accessible_resources": [
+        {
+          "resources": ["*.js", "*.js.map"],
+          "matches": [ "http://localhost/*" ]
+        }
+    ]
+}
